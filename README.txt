@@ -1,6 +1,6 @@
 THEME: Personal Website - Katherine Chin
 AUTHOR: Katherine Chin
-AUTHOR URI: https://katherinechin.com/
+AUTHOR URL: https://katherinechin.com/
 
 
 CREDITS:
