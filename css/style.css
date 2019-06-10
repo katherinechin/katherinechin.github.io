@@ -1,86 +1,252 @@
+/* ==========================================================================
+   Main Style
+   ========================================================================== */
+
+body {
+  font-family: "Skolar", "Proxima Nova";
+  line-height: 1.8;
+  font-size: 18 px;
+  background: #fff;
+  color: #333232;
+  text-align: justify;
+}
+
+.photo {
+  width: 100%;
+}
+
+.responsive {
+  height: auto;
+  width: 100%;
+}
+
+.vrKid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+/* Header Font */
+
+h1 {
+  font-family: "Proxima Nova";
+  line-height: 1.5;
+  font-size: 24 px;
+  background: #fff;
+  color: #333232;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Proxima Nova";
+  line-height: 1.5;
+  font-size: 1.65rem;
+  background: #fff;
+  color: #333232;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Proxima Nova";
+  line-height: 1.5;
+  font-size: 1.4rem;
+  background: #fff;
+  color: #333232;
+  text-align: justify;
+}
+
+#link {
+  color: #333232;
+  text-decoration: none;
+}
+
+#link:hover {
+  text-decoration: underline;
+  text-decoration-color: #333232;
+}
+
+#notable {
+  text-decoration: none !important;
+  font-style: italic;
+}
+
+#notable:hover {
+  text-decoration: underline !important;
+}
+
+/* Hyperlinks */
+
+a {
+  color: #606060;
+}
+
+a.hyperlink {
+  color: #a5a5a5;
+  text-decoration: underline;
+}
+
+a.hyperlink:hover {
+  color: #c9c9c9;
+}
+
+/* Carousels */
+
+@media only screen and (min-width: 768px) {
+  .carousel-width {
+    width: 400px;
+  }
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ==========================================================================
+      Navbar Style
+   ========================================================================== */
+
+nav {
+  font-family: "Proxima Nova";
+  line-height: 1.8;
+  font-size: 18 px;
+  background: #fff;
+  color: #333232;
+}
+
 .navbar-custom {
-    background-color: #ffffff;
-    min-height: 120px; }
+  background-color: #ffffff;
+  min-height: 120px;
+}
+
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text,
 .navbar-custom .navbar-nav .nav-link {
-    color: #333232; }
+  color: #333232;
+}
+
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: #a39f9f; } 
-@media only screen and (min-width: 580px) { .current {
-        border-bottom: 1px solid #c9c9c9; } }
-#theCanvas {
-    width: 300px;
-    margin: auto;
-    display: block; }
-@media only screen and (min-width: 768px) { .carousel-width {
-    width: 400px; } }
-.carousel-caption {
-    background-color: rgba(0,0,0,0.5); }
-@media only screen and (max-width: 992px) { .social {
-    display: inline-block; } }
-@media only screen and (min-width: 992px) { .social {
-    display: block; } }
-.social {
+  color: #a39f9f;
+}
+
+/* Current Navlink */
+
+@media only screen and (min-width: 580px) {
+  .current {
+    border-bottom: 1px solid #c9c9c9;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Page
+   ========================================================================== */
+
+/* Processing - Embedded */
+#canvas {
+  width: 300px;
+  margin: auto;
+  display: block;
+}
+
+/* ==========================================================================
+   Contact Page
+   ========================================================================== */
+
+@media only screen and (max-width: 992px) {
+  .social {
     display: inline-block;
-    text-align: center; 
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    line-height: 50px;
-    background: #4b4b4b;
-    border-radius: 100%;
-    transition-duration: 0.7s; }
-    .social:hover {
-      background: #f9d8ea;
-        text-decoration: none;
-      box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.2); }
-    .social a {
-      display: block;
-      width: 100%;
-      height: 200%;
-      position: relative;
-      top: 0;
-      color: #f9d8ea;
-      transition: top 0.7s; }
-      .social:hover a {
-        top: -50px; }
-      .social a:after {
-        position: absolute;
-        width: inherit;
-        height: 50%;
-        left: 0;
-        bottom: 0;
-        color: #4b4b4b;
-        line-height: 50px;
-        text-align: center; }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .social {
+    display: block;
+  }
+}
+
+.social {
+  display: inline-block;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  line-height: 50px;
+  background: #4b4b4b;
+  border-radius: 100%;
+  transition-duration: 0.7s;
+}
+
+.social:hover {
+  background: #f9d8ea;
+  text-decoration: none;
+  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.2);
+}
+
+.social a {
+  display: block;
+  width: 100%;
+  height: 200%;
+  position: relative;
+  top: 0;
+  color: #f9d8ea;
+  transition: top 0.7s;
+}
+
+.social:hover a {
+  top: -50px;
+}
+
+.social a:after {
+  position: absolute;
+  width: inherit;
+  height: 50%;
+  left: 0;
+  bottom: 0;
+  color: #4b4b4b;
+  line-height: 50px;
+  text-align: center;
+}
+
 .icon-linkedin:before, .icon-linkedin:after {
   font-family: 'icomoon';
-  content:"\ea69";
-    speak: none;
+  content: "\ea69";
+  speak: none;
   font-style: normal;
   font-weight: normal;
   line-height: 3.2;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+}
+
 .icon-github:before, .icon-github:after {
   font-family: 'icomoon';
-    content: "\ea5d";
-    speak: none;
+  content: "\ea5d";
+  speak: none;
   font-style: normal;
   font-weight: normal;
   line-height: 3.2;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+}
+
 .icon-mail:before, .icon-mail:after {
   font-family: 'icomoon';
-    content: "\e9db";
-    speak: none;
+  content: "\e9db";
+  speak: none;
   font-style: normal;
   font-weight: normal;
   line-height: 3.2;
-  -webkit-font-smoothing: antialiased; }
-.btn {
-background-color: #b4b3b3;
+  -webkit-font-smoothing: antialiased;
+}
+
+.submit {
+  background-color: #b4b3b3;
   border: none;
   color: #ffffff;
   padding: 12px 32px;
@@ -88,20 +254,7 @@ background-color: #b4b3b3;
   text-decoration: none;
   display: inline-block;
   font-family: "Proxima Nova";
-    font-size: 16px;
+  font-size: 16px;
   margin: 4px 2px;
-  cursor: pointer; }
-.textJustify {
-    text-align: justify; }
-a.noColor,
-a.noColor:hover {
-    color: #949292;
-    text-decoration: underline; }
-a {
-        color: #949292; }
-body {
-    font-family: "Proxima Nova";
-    line-height: 1.8;
-    font-size: 18 px;
-    background: #fff;
-    color: #333232; }
+  cursor: pointer;
+}
