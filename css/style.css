@@ -5,26 +5,15 @@
 body {
   font-family: "Skolar", "Proxima Nova";
   line-height: 1.8;
-  font-size: 18 px;
   background: #fff;
   color: #333232;
   text-align: justify;
 }
 
+/* Images */
+
 .photo {
   width: 100%;
-}
-
-.responsive {
-  height: auto;
-  width: 100%;
-}
-
-.vrKid {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 }
 
 .center {
@@ -34,12 +23,18 @@ body {
   width: 75%;
 }
 
+.vrKid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* Header Font */
 
 h1 {
   font-family: "Proxima Nova";
   line-height: 1.5;
-  font-size: 24 px;
   background: #fff;
   color: #333232;
   text-align: center;
@@ -61,25 +56,6 @@ h3 {
   background: #fff;
   color: #333232;
   text-align: justify;
-}
-
-#link {
-  color: #333232;
-  text-decoration: none;
-}
-
-#link:hover {
-  text-decoration: underline;
-  text-decoration-color: #333232;
-}
-
-#notable {
-  text-decoration: none !important;
-  font-style: italic;
-}
-
-#notable:hover {
-  text-decoration: underline !important;
 }
 
 /* Hyperlinks */
@@ -149,7 +125,27 @@ nav {
    Portfolio Page
    ========================================================================== */
 
+#link {
+  color: #333232;
+  text-decoration: none;
+}
+
+#link:hover {
+  text-decoration: underline;
+  text-decoration-color: #333232;
+}
+
+#notable {
+  text-decoration: none !important;
+  font-style: italic;
+}
+
+#notable:hover {
+  text-decoration: underline !important;
+}
+
 /* Processing - Embedded */
+
 #canvas {
   width: 300px;
   margin: auto;
