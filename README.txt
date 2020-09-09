@@ -1,6 +1,6 @@
 THEME: Personal Website - Katherine Chin
 AUTHOR: Katherine Chin
-AUTHOR URL: https://katherinechin.com/
+AUTHOR URL: https://katherinechin.github.io/
 © 2020 Katherine Chin. All rights reserved.
 
 
